@@ -1,0 +1,10 @@
+{
+  "name": "jira-deliver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "jira-connector": "^3.1.0",
+    "node-fetch": "^2.6.0"
+  }
+}

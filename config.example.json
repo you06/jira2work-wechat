@@ -1,0 +1,11 @@
+{
+  "project": "PINGCAP",
+  "jira": {
+    "user": "",
+    "password": "",
+    "endpoint": "",
+    "server-id": "",
+    "server": ""
+  },
+  "wechat-key": ""
+}
