@@ -21,7 +21,7 @@ async function main() {
   let report = `Opened issues in ${config.project}`
 
   for (const issue of issues) {
-    report += `\n${issue.key}: https://${config.jira.endpoint}/browse/${issue.key}`
+    report += `\n${issue.key}: ${issue.fields.summary}\nhttps://${config.jira.endpoint}/browse/${issue.key}\n`
   }
 
   const url = `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${config['wechat-key']}`
@@ -42,6 +42,4 @@ async function main() {
       console.log(error)
       return new Error(error)
     })
-
-  console.log(report)
 }
